@@ -14,6 +14,8 @@ class TestViewController: UIViewController {
     @IBOutlet weak var lblCount : UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var stackView: UIStackView!
+    var lastSeletecdOption : OptionView?
+    
     let questions = Question.buildQuestions(from: "Questions")
     var currentIndex = 0
     override func viewDidLoad() {
@@ -41,8 +43,8 @@ class TestViewController: UIViewController {
 
                 let optionview = OptionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
                 optionview.translatesAutoresizingMaskIntoConstraints = false
-                optionview.lblTitle.text = option.title
-                optionview.isSelected = false
+                optionview.option = option
+                optionview.addTarget(self, action: #selector(optionPressed(_:)), for: .touchUpInside)
                 containerView.addSubview(optionview)
                 
                 NSLayoutConstraint.activate([
@@ -57,10 +59,34 @@ class TestViewController: UIViewController {
     }
     
     func prepareQuestion(at index: Int){
+        guard index < questions.count else {
+            print("Done!!!")
+            return
+        }
+        let title =  index < (questions.count - 1) ? "Next Question" : "Done"
+        btnNext.setTitle(title, for: .normal)
         let question = questions[index]
+        lblCount.text = "\(index + 1) of \(questions.count)"
+        lblQuestion.text = question.question
+        lastSeletecdOption = nil
+        let width = scrollView.frame.size.width
+        scrollView.setContentOffset(CGPoint(x: width * CGFloat(index), y:  0.0), animated: true)
+    }
+    
+    @objc
+    func optionPressed(_ sender: OptionView){
+        lastSeletecdOption?.isSelected = false
+        lastSeletecdOption = sender
+        lastSeletecdOption?.isSelected = true
         
     }
+    
     @IBAction func btnNextPressed(_ sender: Any) {
+        guard lastSeletecdOption != nil else {
+            return
+        }
+        currentIndex = currentIndex + 1;
+        prepareQuestion(at: currentIndex);
     }
     
 }

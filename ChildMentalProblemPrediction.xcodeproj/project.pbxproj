@@ -64,19 +64,51 @@
 		D821FB5521A9BF5F008BCC7D /* ChildMentalProblemPrediction */ = {
 			isa = PBXGroup;
 			children = (
+				D821FB6221A9BF61008BCC7D /* Info.plist */,
 				D821FB5621A9BF5F008BCC7D /* AppDelegate.swift */,
-				D821FB5821A9BF5F008BCC7D /* ViewController.swift */,
-				D821FB5A21A9BF5F008BCC7D /* Main.storyboard */,
 				D821FB5D21A9BF61008BCC7D /* Assets.xcassets */,
 				D821FB5F21A9BF61008BCC7D /* LaunchScreen.storyboard */,
-				D821FB6221A9BF61008BCC7D /* Info.plist */,
-				D821FB6821A9CB6E008BCC7D /* TestViewController.swift */,
+				D821FB5A21A9BF5F008BCC7D /* Main.storyboard */,
+				D821FB7421A9F876008BCC7D /* Models */,
+				D821FB7721A9F8AB008BCC7D /* ViewControllers */,
+				D821FB7521A9F88E008BCC7D /* Views */,
+			);
+			path = ChildMentalProblemPrediction;
+			sourceTree = "<group>";
+		};
+		D821FB7421A9F876008BCC7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				D821FB6A21A9CDBE008BCC7D /* Questions.plist */,
 				D821FB6C21A9D196008BCC7D /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D821FB7521A9F88E008BCC7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D821FB7621A9F897008BCC7D /* OptionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D821FB7621A9F897008BCC7D /* OptionView */ = {
+			isa = PBXGroup;
+			children = (
 				D821FB6E21A9DDE3008BCC7D /* OptionView.xib */,
 				D821FB7021A9DEB1008BCC7D /* OptionView.swift */,
 			);
-			path = ChildMentalProblemPrediction;
+			path = OptionView;
+			sourceTree = "<group>";
+		};
+		D821FB7721A9F8AB008BCC7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D821FB5821A9BF5F008BCC7D /* ViewController.swift */,
+				D821FB6821A9CB6E008BCC7D /* TestViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

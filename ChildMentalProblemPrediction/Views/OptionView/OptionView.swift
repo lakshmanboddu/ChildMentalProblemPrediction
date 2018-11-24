@@ -14,7 +14,12 @@ class OptionView: UIControl {
     @IBOutlet weak var stackView : UIStackView!
     @IBOutlet weak var imageView : UIImageView!
     @IBOutlet weak var lblTitle : UILabel!
-   
+    var option : Option?{
+        didSet{
+            lblTitle.text = option?.title
+            isSelected = option?.selected ?? false
+        }
+    }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInt()
@@ -40,6 +45,7 @@ class OptionView: UIControl {
         
         didSet{
             imageView.image = isSelected == true ? UIImage(named: "radio-s") : UIImage(named: "radio")
+            option?.selected = isSelected
         }
     }
     

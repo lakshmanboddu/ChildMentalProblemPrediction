@@ -130,10 +130,7 @@
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Whether the child has
-adequate ablity to
-socialize with peers,
-relatives and teachers?</string>
+		<string>Whether the child has adequate ablity to socialize with peers, relatives and teachers?</string>
 		<key>options</key>
 		<array>
 			<dict>

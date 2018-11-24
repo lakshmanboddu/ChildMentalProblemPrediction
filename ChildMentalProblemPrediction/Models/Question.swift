@@ -8,9 +8,16 @@
 
 import UIKit
 
-struct Option {
+class Option {
     let title : String
     let value : Int
+    var selected : Bool = false
+    
+    init(title: String, value: Int) {
+        self.title = title
+        self.value = value
+    }
+    
     static func buildOptions(from arr: Array<Dictionary<String, Any>>) -> [Option]{
         return arr.map { (dic) -> Option in
             return Option(title: dic["title"] as! String, value: dic["value"] as! Int)
