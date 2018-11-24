@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionView" customModule="ChildMentalProblemPrediction" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="EpL-QF-fK9"/>
+                <outlet property="imageView" destination="fqZ-vD-VG3" id="wOi-pw-pNa"/>
+                <outlet property="lblTitle" destination="nTN-9I-DwN" id="3qh-IT-M4x"/>
+                <outlet property="stackView" destination="mYo-oj-ae2" id="RKX-oQ-JKp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYo-oj-ae2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="radio-s" translatesAutoresizingMaskIntoConstraints="NO" id="fqZ-vD-VG3">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="50"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not at all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTN-9I-DwN">
+                            <rect key="frame" x="55" y="0.0" width="320" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mYo-oj-ae2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L4a-yu-Ss1"/>
+                <constraint firstAttribute="bottom" secondItem="mYo-oj-ae2" secondAttribute="bottom" id="aaK-1O-knH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mYo-oj-ae2" secondAttribute="trailing" id="lqo-8Z-EWT"/>
+                <constraint firstItem="mYo-oj-ae2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yGL-M5-Zvv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-410" y="-67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="radio-s" width="55" height="55"/>
+    </resources>
+</document>

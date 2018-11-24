@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>Age group of the child?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Infant (1-2 years)</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Early Childhood (3-8 years)</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Middle childhood (9-11 years)</string>
+				<key>value</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Adolescent (12-18 years)</string>
+				<key>value</key>
+				<integer>3</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Any Psychological disorder in the family?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Any complication during pregnancy?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Delay in development of speech?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child is under any type of medical control?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Performance of the child in academic?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Adequate</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Inadequate</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child has
+adequate ablity to
+socialize with peers,
+relatives and teachers?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Adequate</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Inadequate</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
