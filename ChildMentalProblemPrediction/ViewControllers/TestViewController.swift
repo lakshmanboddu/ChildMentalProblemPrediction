@@ -60,7 +60,13 @@ class TestViewController: UIViewController {
     
     func prepareQuestion(at index: Int){
         guard index < questions.count else {
-            print("Done!!!")
+            questions.forEach { (question) in
+                question.options.forEach({ (option) in
+                    if option.selected{
+                        print(option.title)
+                    }
+                })
+            }
             return
         }
         let title =  index < (questions.count - 1) ? "Next Question" : "Done"
