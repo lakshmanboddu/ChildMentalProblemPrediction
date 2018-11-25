@@ -17,6 +17,8 @@
 		D821FB6D21A9D196008BCC7D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821FB6C21A9D196008BCC7D /* Question.swift */; };
 		D821FB6F21A9DDE3008BCC7D /* OptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D821FB6E21A9DDE3008BCC7D /* OptionView.xib */; };
 		D821FB7121A9DEB1008BCC7D /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821FB7021A9DEB1008BCC7D /* OptionView.swift */; };
+		D87873EC21AB3749004E55B3 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87873EB21AB3749004E55B3 /* OutputViewController.swift */; };
+		D87873F021AB406A004E55B3 /* LogisticFinal.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D87873EF21AB4069004E55B3 /* LogisticFinal.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D821FB6C21A9D196008BCC7D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D821FB6E21A9DDE3008BCC7D /* OptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionView.xib; sourceTree = "<group>"; };
 		D821FB7021A9DEB1008BCC7D /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		D87873EB21AB3749004E55B3 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
+		D87873EF21AB4069004E55B3 /* LogisticFinal.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = LogisticFinal.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		D821FB5521A9BF5F008BCC7D /* ChildMentalProblemPrediction */ = {
 			isa = PBXGroup;
 			children = (
+				D87873EF21AB4069004E55B3 /* LogisticFinal.mlmodel */,
 				D821FB6221A9BF61008BCC7D /* Info.plist */,
 				D821FB5621A9BF5F008BCC7D /* AppDelegate.swift */,
 				D821FB5D21A9BF61008BCC7D /* Assets.xcassets */,
@@ -107,6 +112,7 @@
 			children = (
 				D821FB5821A9BF5F008BCC7D /* ViewController.swift */,
 				D821FB6821A9CB6E008BCC7D /* TestViewController.swift */,
+				D87873EB21AB3749004E55B3 /* OutputViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87873F021AB406A004E55B3 /* LogisticFinal.mlmodel in Sources */,
 				D821FB5921A9BF5F008BCC7D /* ViewController.swift in Sources */,
 				D821FB6D21A9D196008BCC7D /* Question.swift in Sources */,
 				D821FB6921A9CB6E008BCC7D /* TestViewController.swift in Sources */,
 				D821FB7121A9DEB1008BCC7D /* OptionView.swift in Sources */,
+				D87873EC21AB3749004E55B3 /* OutputViewController.swift in Sources */,
 				D821FB5721A9BF5F008BCC7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +342,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChildMentalProblemPrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,6 +351,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lakshmanboddu.ChildMentalProblemPrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,7 +361,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChildMentalProblemPrediction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,6 +370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lakshmanboddu.ChildMentalProblemPrediction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -35,6 +35,25 @@
 	</dict>
 	<dict>
 		<key>question</key>
+		<string>Presence / Absence of Complication during pregnancy?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
 		<string>Any Psychological disorder in the family?</string>
 		<key>options</key>
 		<array>
@@ -54,7 +73,7 @@
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Any complication during pregnancy?</string>
+		<string>Whether the child is under any type of medicinal control?</string>
 		<key>options</key>
 		<array>
 			<dict>
@@ -73,45 +92,7 @@
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Delay in development of speech?</string>
-		<key>options</key>
-		<array>
-			<dict>
-				<key>title</key>
-				<string>No</string>
-				<key>value</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Yes</string>
-				<key>value</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>question</key>
-		<string>Whether the child is under any type of medical control?</string>
-		<key>options</key>
-		<array>
-			<dict>
-				<key>title</key>
-				<string>No</string>
-				<key>value</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>Yes</string>
-				<key>value</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>question</key>
-		<string>Performance of the child in academic?</string>
+		<string>Whether the performance of the child is adequate/ inadequate in academics?</string>
 		<key>options</key>
 		<array>
 			<dict>
@@ -130,7 +111,26 @@
 	</dict>
 	<dict>
 		<key>question</key>
-		<string>Whether the child has adequate ablity to socialize with peers, relatives and teachers?</string>
+		<string>Whether the child has any problem in behavior, Ex. Cheating, telling lies?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child has adequate ability to focus his attention on a particular object or activity?</string>
 		<key>options</key>
 		<array>
 			<dict>
@@ -142,6 +142,63 @@
 			<dict>
 				<key>title</key>
 				<string>Inadequate</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child is able to relax or involving in constant activity?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child has a sudden surge of electrical activity in the brain which may cause unconsciousness, rigidness, muscle stiffness, uncontrollable movements, etc?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No</string>
+				<key>value</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>Whether the child has any difficulty in acquiring age appropriate knowledge and skills?</string>
+		<key>options</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>Yes</string>
+				<key>value</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>No</string>
 				<key>value</key>
 				<integer>0</integer>
 			</dict>

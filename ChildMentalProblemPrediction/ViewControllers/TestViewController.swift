@@ -23,6 +23,7 @@ class TestViewController: UIViewController {
         // Do any additional setup after loading the view.
         buildQuestionPreviewer()
         prepareQuestion(at: currentIndex)
+        btnNext.layer.borderColor = UIColor.white.cgColor
     }
     
     func buildQuestionPreviewer(){
@@ -60,13 +61,18 @@ class TestViewController: UIViewController {
     
     func prepareQuestion(at index: Int){
         guard index < questions.count else {
+            var arrVal : [Double] = []
             questions.forEach { (question) in
                 question.options.forEach({ (option) in
                     if option.selected{
-                        print(option.title)
+                        arrVal.append(Double(option.value))
                     }
                 })
             }
+            let outputVc = self.storyboard?.instantiateViewController(withIdentifier: "OutputViewController") as! OutputViewController
+            outputVc.showOuptput(values: arrVal)
+            self.navigationController?.pushViewController(outputVc, animated: true)
+           
             return
         }
         let title =  index < (questions.count - 1) ? "Next Question" : "Done"
