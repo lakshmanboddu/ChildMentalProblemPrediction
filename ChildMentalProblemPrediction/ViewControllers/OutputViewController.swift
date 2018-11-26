@@ -19,7 +19,13 @@ class OutputViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        lblResult.text = "\( outputFinal)"
+        if outputFinal == 0{
+              lblResult.text = "Congratulations your child doesn't seem to have mental health problem. Always keep an eye on your child."
+        }
+        else{
+              lblResult.text = "Your child might be suffering from a mental health problem. Consider consulting a psychiatrist as soon as possible to clear the confusion and probably get treated."
+        }
+      
         btnTakeAgain.layer.borderColor = UIColor.white.cgColor
     }
     
